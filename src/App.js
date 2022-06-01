@@ -34,7 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
           </Route>
 
-          <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+          <Route element={<RequireAuth allowedRoles={[ROLES.Admin, ROLES.User]} />}>
             <Route path="editor" element={<Editor />} />
           </Route>
 
@@ -43,7 +43,7 @@ function App() {
             <Route path="admin" element={<Admin />} />
           </Route>
 
-          <Route element={<RequireAuth allowedRoles={[ROLES.Editor, ROLES.Admin]} />}>
+          <Route element={<RequireAuth allowedRoles={[ROLES.User, ROLES.Admin]} />}>
             <Route path="students" element={<Lounge />} />
           </Route>
         </Route>
