@@ -17,6 +17,8 @@ body {
     background-color: dodgerblue;
 }
 
+
+
 .App {
   display: flex;
   flex-direction: column;
@@ -24,6 +26,16 @@ body {
   align-items: center;
   min-height: 100vh; 
   padding: 1rem 0.5rem;
+}
+.section-body{
+    width: auto;
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
 }
 
 section {

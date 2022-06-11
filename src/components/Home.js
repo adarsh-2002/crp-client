@@ -16,13 +16,20 @@ const Home = () => {
             <br />
             <p>You are logged in!</p>
             <br />
-            <Link to="/editor">Go to the Add Students page</Link>
+            <Link to="/editor">Add new students</Link>
             <br />
-            <Link to="/admin">Go to the Users page</Link>
+            <Link to="/admin">View all users</Link>
             <br />
-            <Link to="/students">Go to the Students List</Link>
+            <Link to="/students">View all records</Link>
             <br />
-            <Link to="/linkpage">Go to the link page</Link>
+            <Link to="/search">Search existing records</Link>
+            <br />
+            <Link to="/update">Update existing records</Link>
+            <br />
+            <Link to="/delete">Delete existing records</Link>
+            <br/>
+            <Link to="/linkpage">View all links</Link>
+            
             <div className="flexGrow">
                 <button onClick={signOut}>Sign Out</button>
             </div>

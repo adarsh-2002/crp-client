@@ -11,8 +11,12 @@ const LinkPage = () => {
             <br />
             <h2>Private</h2>
             <Link to="/">Home</Link>
-            <Link to="/editor">Add Student Page</Link>
-            <Link to="/admin">Admin Page</Link>
+            <Link to="/editor">Add Student Record</Link>
+            <Link to="/students">View all student records</Link>
+            <Link to="/search">Search records</Link>
+            <Link to="/update">Update records</Link>
+            <Link to="/delete">Delete records</Link>
+            <Link to="/admin">View users (Admin only)</Link>
         </section>
     )
 }

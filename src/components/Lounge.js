@@ -46,7 +46,8 @@ const Lounge = () => {
             <th>Department</th>
             <th>Graduation Year</th>
             <th>Semester</th>
-            <th>Records</th>
+            <th>Subject</th>
+            <th>Marks</th>
           </tr>
         </thead>
         <tbody>
@@ -60,20 +61,8 @@ const Lounge = () => {
                 <td>{val.dept}</td>
                 <td>{val.graduationYear}</td>
                 <td>{val.semester}</td>
-                <td>
-                  <th>
-                    <td>Subject code</td>
-                    <td>Marks</td>
-                  </th>
-                  {val.records.map((grades, id) => {
-                    return (
-                      <tr>
-                        <td>{grades.subject}</td>
-                        <td>{grades.marks}</td>
-                      </tr>
-                    );
-                  })}
-                </td>
+                <td>{val.subject}</td>
+                <td>{val.marks}</td>
               </tr>
             );
           })}
